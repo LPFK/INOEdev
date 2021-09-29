@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}INOE{% endblock %}
+
+{% block body %}
+
+        <section>
+
+      <!-- Content -->
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center justify-content-between gx-0 min-vh-100">
+          <div class="col-12 col-md-5 align-self-stretch">
+
+            <!-- Image (mobile) -->
+            <img src="assets/img/photos/photo-5.jpg" class="d-md-none img-cover" alt="...">
+
+            <!-- Image -->
+            <div class="d-none d-md-block vw-50 h-100 float-end bg-cover" style="background-image: url(https://picsum.photos/100091100);"></div>
+
+          </div>
+          <div class="col-12 col-md-6 py-8 py-md-11">
+
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-2">
+              Contact us for anything.
+            </h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-0">
+              Our goal is to be as helpful as possible.
+            </p>
+
+            <!-- Divider -->
+            <hr class="hr-sm my-6 my-md-8 mx-auto bg-gray-300">
+
+            <!-- Form -->
+            <form>
+              <div class="form-group mb-5">
+
+                <!-- Label -->
+                <label class="form-label" for="contactName">
+                  Nom complet
+                </label>
+
+                <!-- Input -->
+                <input class="form-control" id="contactName" type="text" placeholder="Nom complet">
+
+              </div>
+              <div class="form-group mb-5">
+
+                <!-- Label -->
+                <label class="form-label" for="contactEmail">
+                  E-mail
+                </label>
+
+                <!-- Input -->
+                <input class="form-control" id="contactEmail" type="email" placeholder="Bonjour@exemple.com">
+
+              </div>
+              <div class="form-group mb-5 d-none">
+
+                <!-- Label -->
+                <label for="contactMessage">
+                  Comment peut-on vous aider.
+                </label>
+
+                <!-- Input -->
+                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell us what we can help you with!"></textarea>
+
+              </div>
+              <div class="form-group mb-0">
+
+                <!-- Submit -->
+                <a href="#!" class="btn w-100 btn-primary lift">
+                  Envoyer le message 
+                </a>
+
+              </div>
+            </form>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+
+{% endblock %}
