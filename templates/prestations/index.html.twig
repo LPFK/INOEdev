@@ -1,20 +1,84 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PrestationsController!{% endblock %}
+{% block title %}Prestations{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    
+   <section class="py-10 py-md-14 bg-cover overlay overlay-dark overlay-40 jarallax" id="welcome" style="background-image: url(/img/covers/cover-21.jpg);">
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+      <!-- Shape -->
+      <div class="shape shape-blur-3 text-white">
+        <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor" stop-opacity=".075"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs></svg>      </div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Lilian/symfonyProjet/INOEdev/src/Controller/PrestationsController.php'|file_link(0) }}">src/Controller/PrestationsController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Lilian/symfonyProjet/INOEdev/templates/prestations/index.html.twig'|file_link(0) }}">templates/prestations/index.html.twig</a></code></li>
-    </ul>
-</div>
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1 class="display-3 fw-bold text-white">
+              Expertises judiciaires et privés
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-white mb-8">
+              Inoe est un cabinet d'expertise spécialisé en investigations numériques, près la cour d'appel d'Aix-en-Provence
+            </p>
+
+            <!-- Button -->
+            <a href="/contact" class="btn btn-white shadow lift">
+              Contactez nous
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="pt-8 pt-md-10" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+
+            <!-- Button -->
+            <a href="" class="btn btn-white btn-rounded-circle shadow mt-n12 mt-md-n14">
+              <i class="fe fe-arrow-down"></i>
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center">
+          <div class="col-14 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h2 class="fw-bold">
+              Une connaissance du domaine informatique <span class="text-primary">irréprochable</span>.
+            </h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-gray-700 mb-10">
+              Depuis plus de 4 ans Inoe propose un service d’expertises et d’investigations informatiques à destination des services de Justice et autres(Avocats, Huissier, Domaine privé etc..).Nous intervenons sur la plupart des systèmes informatiques existant(Ordinateurs (Windows, Linux, Apple…), Disques durs, appareils connectés, Téléphones portables, vidéos, drônes, serveurs, infrastructures informatiques, données cloud, etc… ).
+            </p>
+            
+          </div>
+      </div> <!-- / .container -->
+    </section>
+      <!-- BOT SHAPE -->
+    <div class="custom-shape-divider-bottom-1636365586">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <!-- BOT SHAPE -->
+
 {% endblock %}
