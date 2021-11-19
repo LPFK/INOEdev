@@ -28,4 +28,12 @@ class ContactService
         $this->manager->flush();
         $this->flash->add('success', 'Votre message est bien envoyé, merci.');
     }
+
+    public function isSend(Contact $contact): void
+    {
+        $contact->setIsSend(true);
+
+        $this->manager->persist($contact);
+        $this->manager->flush();
+    }
 }
