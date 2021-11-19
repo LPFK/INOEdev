@@ -34,55 +34,49 @@
             <hr class="hr-sm my-6 my-md-8 mx-auto bg-gray-300">
 
             <!-- Form -->
-            <form>
-              <div class="form-group mb-5">
-
-                <!-- Label -->
-                <label class="form-label" for="contactName">
-                  Nom complet
-                </label>
-
-                <!-- Input -->
-                <input class="form-control" id="contactName" type="text" placeholder="Nom complet">
-
+            {{ form_start(form) }}
+              {%  for message in app.flashes('success') %}
+                <div class="alert alert-success">
+                    {{ message }}
+                </div>
+              {% endfor %}
+              
+              <div class="mu-custom-class-for-errors">
+                  {{ form_errors(form) }}
               </div>
-              <div class="form-group mb-5">
 
+              <div class="form-group mb-5">
+                <!-- Label -->
+                <label class="form-label" for="contactName" placeholder="Nom complet">
+                  {{ form_label(form.nom) }}
+                </label>
+                <!-- Input -->
+                {{ form_widget(form.nom) }}
+              </div>
+
+              <div class="form-group mb-5">
                 <!-- Label -->
                 <label class="form-label" for="contactEmail">
-                  E-mail
+                  {{ form_label(form.email) }}
                 </label>
 
                 <!-- Input -->
-                <input class="form-control" id="contactEmail" type="email" placeholder="Bonjour@exemple.com">
-
+                {{ form_widget(form.email) }}
               </div>
-              <div class="form-group mb-5">
 
+              <div class="form-group mb-5">
                 <!-- Label -->
                 <label class="form-label" for="contactMessage">
-                  Votre message
+                  {{ form_label(form.message) }}
                 </label>
 
                 <!-- Input -->
-                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Comment peut-on vous aidez?"></textarea>
-
+                {{ form_widget(form.message) }}
               </div>
-                
 
-              <div class="form-group mb-0">
-
-                <!-- Submit -->
-                <a href="#!" class="btn w-100 btn-primary lift">
-                  Envoyer le message 
-                </a>
-
+              <div class="btn w-100 btn-primary lift">
+                {{ form_widget(form.envoyer) }}
               </div>
-            </form>
-
-          </div>
-        </div> <!-- / .row -->
-      </div>
-    </section>
+            {{ form_end(form) }} 
 
 {% endblock %}
