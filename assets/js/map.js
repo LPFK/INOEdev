@@ -4,7 +4,7 @@
 //
 
 const maps = document.querySelectorAll('[data-map]');
-const accessToken = 'pk.eyJ1IjoiZ29vZHRoZW1lcyIsImEiOiJjanU5eHR4N2cybDU5NGVwOHZwNGprb3E0In0.msdw9q16dh8v4azJXUdiXg';
+const accessToken = 'sk.eyJ1IjoiaW50YXJlcyIsImEiOiJja3dhZzZ5bHEzYXBjMnVyb3FlYWhiaWdkIn0.IwxArJfOez9gmPpa9XxqTA';
 
 maps.forEach((map) => {
   const elementOptions = map.dataset.map ? JSON.parse(map.dataset.map) : {};
@@ -27,3 +27,5 @@ maps.forEach((map) => {
   // Init map
   new mapboxgl.Map(options);
 });
+
+
